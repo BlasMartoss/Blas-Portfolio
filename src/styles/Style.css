@@ -1,0 +1,149 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#burger_button {
+  display: flex;
+  flex-direction: column;
+  width: 3rem;
+  height: 3rem;
+  border: 0;
+  background-color: transparent;
+  gap: 0.65rem;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1000;
+}
+#burger_button div {
+  background-color: white;
+  height: 2px;
+  width: 80%;
+  border-radius: 5px;
+  transition: all 0.5s;
+  transform-origin: left;
+}
+#skills_container {
+  box-shadow: 0 3.2px 7.2px 0 rgb(0 0 0 / 13%), 0 0.6px 1.8px 0 rgb(0 0 0 / 11%);
+}
+/* Wave Animation*/
+.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Hero gradient text animation */
+
+#gradientText {
+  background: linear-gradient(
+    to right,
+    #7953cd 20%,
+    #00affa 30%,
+    #0190cd 70%,
+    #764ada 80%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-size: 500% auto;
+  animation: textShine 5s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/*Skills border*/
+
+#skills_container {
+  border: 3px solid #0000;
+
+  background: linear-gradient(#0e141b, #0e141b) padding-box,
+    linear-gradient(var(--angle), #474747, #5e17eb) border-box;
+  animation: 8s rotate linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+}
+
+body,
+p,
+li,
+a {
+  font-family: "Open Sans", sans-serif;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
