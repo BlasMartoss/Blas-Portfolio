@@ -39,7 +39,7 @@ function Hero() {
               href="#projects"
               className="text-[18px] text-white bg-[#6109efe3] px-5 py-1 rounded rounded-2 cursor-pointer flex gap-2 items-center hover:bg-[#6109eff4]"
             >
-              <p>Mis Proyectos</p>
+              <p className="text-[14px] md:text-[18px]">Mis Proyectos</p>
               <img className="h-5" src={Arrow} alt="Right arrow" />
             </a>
             <a
@@ -48,7 +48,7 @@ function Hero() {
               rel="noopener noreferrer"
               className="text-[18px] text-white border border-gray px-5 py-1 rounded rounded-2 cursor-pointer hover:border-gray-300 hover:text-gray-300"
             >
-              <p></p>Descargar CV
+              <p className="text-[14px] md:text-[18px]">Descargar CV</p>
             </a>
           </div>
           <div className="flex gap-5 py-2">
