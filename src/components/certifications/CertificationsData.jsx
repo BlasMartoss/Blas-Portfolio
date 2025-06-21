@@ -6,9 +6,9 @@ const certificationsData = [
     link: "https://www.credly.com/badges/5d8868a9-bb29-4caf-bd60-0e5a6f32b4b4/linked_in?t=suhy4o",
   },
   {
-    title: "Bootcamp .NET",
+    title: "Bootcamp .NET & C# Developer",
     description: 'Certificado de conocimientos de .NET 376h".',
-    link: "",
+    link: "https://badgr.com/public/assertions/SpytEkWLR22wXRM8IgRuaA",
   },
 ];
 
